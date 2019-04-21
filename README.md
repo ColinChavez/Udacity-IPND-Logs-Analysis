@@ -1,58 +1,35 @@
 # Udacity-IPND-Logs-Analysis
 
-Project Title
-One Paragraph of project description goes here
+Your task is to create a reporting tool that prints out reports (in plain text) based on the data in the database. This reporting tool is a Python program using the psycopg2 module to connect to the database.
 
-Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+So what are we reporting, anyway?
+Here are the questions the reporting tool should answer. The example answers given aren't the right ones, though!
 
-Prerequisites
-What things you need to install the software and how to install them
+1. What are the most popular three articles of all time? Which articles have been accessed the most? Present this information as a sorted list with the most popular article at the top.
 
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
+Example:
 
-Say what the step will be
+"Princess Shellfish Marries Prince Handsome" — 1201 views
+"Baltimore Ravens Defeat Rhode Island Shoggoths" — 915 views
+"Political Scandal Ends In Political Scandal" — 553 views
+2. Who are the most popular article authors of all time? That is, when you sum up all of the articles each author has written, which authors get the most page views? Present this as a sorted list with the most popular author at the top.
 
-Give the example
-And repeat
+Example:
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+Ursula La Multa — 2304 views
+Rudolf von Treppenwitz — 1985 views
+Markoff Chaney — 1723 views
+Anonymous Contributor — 1023 views
+3. On which days did more than 1% of requests lead to errors? The log table includes a column status that indicates the HTTP status code that the news site sent to the user's browser. (Refer to this lesson for more information about the idea of HTTP status codes.)
 
-Running the tests
-Explain how to run the automated tests for this system
+Example:
 
-Break down into end to end tests
-Explain what these tests test and why
+July 29, 2016 — 2.5% errors
+Good coding practices
+SQL style
+Each one of these questions can be answered with a single database query. Your code should get the database to do the heavy lifting by using joins, aggregations, and the where clause to extract just the information you need, doing minimal "post-processing" in the Python code itself.
 
-Give an example
-And coding style tests
-Explain what these tests test and why
+In building this tool, you may find it useful to add views to the database. You are allowed and encouraged to do this! However, if you create views, make sure to put the create view commands you used into your lab's README file so your reviewer will know how to recreate them.
 
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
-
-Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+Python code quality
+Your code should be written with good Python style. The PEP8 style guide is an excellent standard to follow. You can do a quick check using the pep8 command-line tool.
