@@ -34,7 +34,7 @@ In building this tool, you may find it useful to add views to the database. You 
 Python code quality
 Your code should be written with good Python style. The PEP8 style guide is an excellent standard to follow. You can do a quick check using the pep8 command-line tool.
 
-##Please Create the following Views:
+# Please Create the following Views:
 ```
 CREATE VIEW popular_articles AS
 SELECT a.title articles, count(l.path) AS views
