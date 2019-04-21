@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\owner\Downloads\FSND-Virtual-Machine\vagrant\logs_analysis.py", line 37, in <module>
+    popular_articles()
+  File "C:\Users\owner\Downloads\FSND-Virtual-Machine\vagrant\logs_analysis.py", line 5, in popular_articles
+    db = psycopg2.connect(database="news")
+  File "C:\Python27\lib\site-packages\psycopg2\__init__.py", line 126, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused (0x0000274D/10061)
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[Finished in 2.2s with exit code 1]
+[shell_cmd: python -u "C:\Users\owner\Downloads\FSND-Virtual-Machine\vagrant\logs_analysis.py"]
+[dir: C:\Users\owner\Downloads\FSND-Virtual-Machine\vagrant]
+[path: C:\Python27\;C:\Python27\Scripts;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Propellerhead Software\ReWire\;C:\Program Files\Common Files\Propellerhead Software\ReWire\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\owner\AppData\Local\Microsoft\WindowsApps;C:\Users\owner\AppData\Local\atom\bin;C:\Users\owner\AppData\Local\GitHubDesktop\bin;C:\Users\owner\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\owner\AppData\Roaming\npm]
