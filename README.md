@@ -40,12 +40,26 @@ Your code should be written with good Python style. The PEP8 style guide is an e
 # Running the Program
 
 Download VirtualBox and Vagrant
+https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
+https://www.vagrantup.com/downloads.html
 
 This will give you the PostgreSQL database and support software needed for this project. If you have used an older version of this VM, you may need to install it into a new directory.
 
 If you need to bring the virtual machine online (with vagrant up), do so now. Then log into it with vagrant ssh.
 
 Download the NEWS Database
+
+Download the VM configuration
+There are a couple of different ways you can download the VM configuration.
+
+You can download and unzip this file:https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip This will give you a directory called FSND-Virtual-Machine. It may be located inside your Downloads folder.
+
+Note: If you are using Windows OS you will find a Time Out error, to fix it use the new Vagrant file configuration to replace you current Vagrant file.
+
+Alternately, you can use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
+
+Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with cd. Inside, you will find another directory called vagrant. Change directory to the vagrant directory:
+
 
 To load the NEWS database, cd into the vagrant directory and use the command ''' psql -d news -f newsdata.sql. '''
 
