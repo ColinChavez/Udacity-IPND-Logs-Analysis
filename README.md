@@ -57,6 +57,8 @@ Running this command will connect to your installed database server and execute 
 
 # Please Create the following Views:
 ```
+Question 1
+
 CREATE VIEW popular_articles AS
 SELECT a.title articles, count(l.path) AS views
 FROM log l
@@ -65,6 +67,8 @@ ON l.path = concat('/article/', a.slug)
 GROUP BY articles
 ORDER BY views desc
 limit 3;
+
+Question 2
 
 CREATE VIEW popular_authors AS
 SELECT au.name AS authors, count(l.path) as views
@@ -76,12 +80,13 @@ ON au.id = a.author
 GROUP BY au.name
 ORDER BY views desc;
 
+Question 3
+
 CREATE VIEW requests AS
 SELECT date(time) date, count(*) AS views
 FROM log 
 GROUP BY date
 ORDER BY views;
-
 
 CREATE VIEW errors AS
 SELECT date(time) date, count(*) AS errors
