@@ -117,3 +117,14 @@ ON errors.date = requests.date
 GROUP BY requests.date, errors.errors, requests.views
 ORDER BY percent desc;
 ```
+
+# References 
+https://classroom.udacity.com/courses/ud198
+https://www.postgresql.org/docs/9.5/sql-select.html
+https://www.postgresql.org/docs/9.5/functions-string.html
+https://www.postgresql.org/docs/9.5/functions-aggregate.html
+http://www.postgresqltutorial.com/postgresql-like/
+https://www.postgresql.org/docs/8.1/functions-subquery.html
+https://www.postgresql.org/docs/9.1/functions-datetime.html
+https://www.postgresql.org/docs/9.5/functions-formatting.html
+https://www.postgresql.org/docs/9.5/sql-createcast.html
