@@ -45,11 +45,13 @@ This will give you the PostgreSQL database and support software needed for this 
 
 If you need to bring the virtual machine online (with vagrant up), do so now. Then log into it with vagrant ssh.
 
+Download the NEWS Database
+
 To load the NEWS database, cd into the vagrant directory and use the command ''' psql -d news -f newsdata.sql. '''
 
 psql — the PostgreSQL command line program
-'''-d news''' — connect to the database named news which has been set up for you
-'''-f newsdata.sql''' — run the SQL statements in the file newsdata.sql
+```-d news``` — connect to the database named news which has been set up for you
+```-f newsdata.sql``` — run the SQL statements in the file newsdata.sql
 Running this command will connect to your installed database server and execute the SQL commands in the downloaded file, creating tables and populating them with data.
 
 
