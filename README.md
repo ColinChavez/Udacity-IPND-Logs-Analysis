@@ -76,7 +76,7 @@ Here's what this command does:
 **```psql```** — the PostgreSQL command line program
 **```-d news ```**— connect to the database named news which has been set up for you
 **```-f newsdata.sql```** — run the **SQL** statements in the file **```newsdata.sql```**
-Running this command will connect to your installed database server and execute the SQL commands in the downloaded file, creating tables and populating them with data.
+Running this command will connect to your installed database server and execute the SQL commands in the downloaded file, creating tables and populating them with data.**THIS COMMAND ONLY NEEDS TO BE RUN ONCE!**
 # Please Create the following Views:
 ```
 Question 1:
