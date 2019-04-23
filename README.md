@@ -73,9 +73,9 @@ Download the [required files](https://d17h27t6h515a5.cloudfront.net/topher/2016/
 To load the data, **```cd```** into the **```/vagrant```** directory and use the command **```psql -d news -f newsdata.sql```**.
 Here's what this command does:
 
-**```psql```** — the PostgreSQL command line program
-**```-d news ```**— connect to the database named news which has been set up for you
-**```-f newsdata.sql```** — run the **SQL** statements in the file **```newsdata.sql```**
+* **```psql```** — the PostgreSQL command line program
+* **```-d news ```**— connect to the database named news which has been set up for you
+* **```-f newsdata.sql```** — run the **SQL** statements in the file **```newsdata.sql```**
 Running this command will connect to your installed database server and execute the SQL commands in the downloaded file, creating tables and populating them with data.**THIS COMMAND ONLY NEEDS TO BE RUN ONCE!**
 # Please Create the following Views:
 ```
