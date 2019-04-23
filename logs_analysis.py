@@ -32,7 +32,7 @@ def popular_articles():
 
 
 def popular_authors():
-    """Displays Top 3 Articles"""
+    """Displays Top 3 Authors"""
     print '\n' + "Who are the most popular authors?" + '\n'
     query2 = "SELECT * FROM popular_authors;"
     top_authors = results(query2)
