@@ -38,17 +38,17 @@ Your code should be written with good Python style. The PEP8 style guide is an e
 
 # Download Software
 
-1. **Install VirtualBox**. 
+>1. **Install VirtualBox**. 
 VirtualBox is the software that actually runs the virtual machine. You can download it from [virtualbox.org](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1). Install the platform package for your operating system. You do not need the extension pack or the SDK. You do not need to launch VirtualBox after installing it; Vagrant will do that.
 
 **Ubuntu users:** If you are running Ubuntu 14.04, install VirtualBox using the Ubuntu Software Center instead. Due to a reported bug, installing VirtualBox from the site may uninstall other software you need.
 
-2. **Install Vagrant**. 
+>2. **Install Vagrant**. 
 Vagrant is the software that configures the VM and lets you share files between your host computer and the VM's filesystem. Download it from [vagrantup.com](https://www.vagrantup.com/downloads.html). Install the version for your operating system.
 
 **Windows users:** The Installer may ask you to grant network permissions to Vagrant or make a firewall exception. Be sure to allow this.
 
-3. **Download the VM Configuration**
+>3. **Download the VM Configuration**
 Download the zip file: [FSND-Virtual-Machine.zip](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip) This will give you a directory called FSND-Virtual-Machine. It may be located inside your Downloads folder.
 
 **Note:** If you are using Windows OS you will find a Time Out error, to fix it use the new Vagrant file configuration to replace you current Vagrant file.
@@ -57,7 +57,7 @@ Alternately, you can use Github to fork and clone the repository https://github.
 
 Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with **```cd```**. Inside, you will find another directory called **```/vagrant```**. Change directory to the **```/vagrant```** directory:
 
-4. **Start the Virtual Machine**
+>4. **Start the Virtual Machine**
 From your terminal, inside the vagrant subdirectory, run the command **```vagrant up```**. This will cause Vagrant to download the Linux operating system and install it. This may take quite a while (many minutes) depending on how fast your Internet connection is. When **```vagrant up```** is finished running, you will get your shell prompt back. At this point, you can run **```vagrant ssh```** to log in to your newly installed Linux VM!
 
 Inside the VM, change directory to **```/vagrant```** and look around with **```ls```**.
