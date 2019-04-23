@@ -29,37 +29,21 @@ Example:
 
 July 29, 2016 — 2.5% errors
 
-Good coding practices
+# Good coding practices
 SQL style
 Each one of these questions can be answered with a single database query. Your code should get the database to do the heavy lifting by using joins, aggregations, and the where clause to extract just the information you need, doing minimal "post-processing" in the Python code itself.
-
-In building this tool, you may find it useful to add views to the database. You are allowed and encouraged to do this! However, if you create views, make sure to put the create view commands you used into your lab's README file so your reviewer will know how to recreate them.
 
 Python code quality
 Your code should be written with good Python style. The PEP8 style guide is an excellent standard to follow. You can do a quick check using the pep8 command-line tool.
 
 # Download Software
 
-Download VirtualBox and Vagrant
-https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
-https://www.vagrantup.com/downloads.html
+1. Install VirtualBox
+VirtualBox is the software that actually runs the virtual machine. You can download it from [virtualbox.org](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1). Install the platform package for your operating system. You do not need the extension pack or the SDK. You do not need to launch VirtualBox after installing it; Vagrant will do that.
 
-This will give you the PostgreSQL database and support software needed for this project. If you have used an older version of this VM, you may need to install it into a new directory.
+Ubuntu users: If you are running Ubuntu 14.04, install VirtualBox using the Ubuntu Software Center instead. Due to a reported bug, installing VirtualBox from the site may uninstall other software you need.
 
-If you need to bring the virtual machine online (with vagrant up), do so now. Then log into it with vagrant ssh.
 
-Download the NEWS Database
-
-Download the VM configuration
-There are a couple of different ways you can download the VM configuration.
-
-You can download and unzip this file:https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip This will give you a directory called FSND-Virtual-Machine. It may be located inside your Downloads folder.
-
-Note: If you are using Windows OS you will find a Time Out error, to fix it use the new Vagrant file configuration to replace you current Vagrant file.
-
-Alternately, you can use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
-
-Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with cd. Inside, you will find another directory called vagrant. Change directory to the vagrant directory:
 
 # Run the Program
 To load the NEWS database, cd into the vagrant directory and use the command ''' psql -d news -f newsdata.sql. '''
