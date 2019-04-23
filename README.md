@@ -38,7 +38,7 @@ In building this tool, you may find it useful to add views to the database. You 
 Python code quality
 Your code should be written with good Python style. The PEP8 style guide is an excellent standard to follow. You can do a quick check using the pep8 command-line tool.
 
-# Running the Program
+# Download Software
 
 Download VirtualBox and Vagrant
 https://www.virtualbox.org/wiki/Download_Old_Builds_5_1
@@ -61,7 +61,7 @@ Alternately, you can use Github to fork and clone the repository https://github.
 
 Either way, you will end up with a new directory containing the VM files. Change to this directory in your terminal with cd. Inside, you will find another directory called vagrant. Change directory to the vagrant directory:
 
-
+# Run the Program
 To load the NEWS database, cd into the vagrant directory and use the command ''' psql -d news -f newsdata.sql. '''
 
 psql — the PostgreSQL command line program
