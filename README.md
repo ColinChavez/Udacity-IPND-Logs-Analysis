@@ -77,7 +77,6 @@ Here's what this command does:
 * **```-d news ```**— connect to the database named news which has been set up for you
 * **```-f newsdata.sql```** — run the **SQL** statements in the file **```newsdata.sql```**
 Running this command will connect to your installed database server and execute the SQL commands in the downloaded file, creating tables and populating them with data.**THIS COMMAND ONLY NEEDS TO BE RUN ONCE!**
-# Please Create the following Views:
 
 # Explore the Database
 Once you have the data loaded into your database, connect to your database using **```psql -d news```** and explore the tables using the **```\dt```** and **```\d```** table commands and select statements.
@@ -92,6 +91,8 @@ The database includes three tables:
 * The **```articles```** table includes the articles themselves.
 *  The **```log table```** includes one entry for each time a user has accessed the site.
 As you explore the data, you may find it useful to take notes! Don't try to memorize all the columns. Instead, write down a description of the column names and what kind of values are found in those columns.
+
+# Please Create the following Views:
 ```
 Question 1:
 
