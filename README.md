@@ -30,10 +30,10 @@ Example:
 July 29, 2016 — 2.5% errors
 
 # Good coding practices
-SQL style
+**SQL** style
 Each one of these questions can be answered with a single database query. Your code should get the database to do the heavy lifting by using joins, aggregations, and the where clause to extract just the information you need, doing minimal "post-processing" in the Python code itself.
 
-Python code quality
+**Python** code quality
 Your code should be written with good Python style. The PEP8 style guide is an excellent standard to follow. You can do a quick check using the pep8 command-line tool.
 
 # Download Software
@@ -64,7 +64,7 @@ Inside the VM, change directory to **```/vagrant```** and look around with **```
 
 The files you see here are the same as the ones in the vagrant subdirectory on your computer (where you started Vagrant from). Any file you create in one will be automatically shared to the other. This means that you can edit code in your favorite text editor, and run it inside the VM.
 
-Files in the VM's /vagrant directory are shared with the vagrant folder on your computer. But other data inside the VM is not. For instance, the PostgreSQL database itself lives only inside the VM.
+Files in the VM's **```/vagrant directory```** are shared with the vagrant folder on your computer. But other data inside the VM is not. For instance, the PostgreSQL database itself lives only inside the VM.
 
 
 
@@ -73,7 +73,7 @@ Files in the VM's /vagrant directory are shared with the vagrant folder on your 
 Download the [required files](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called **```newsdata.sql```**. Put this file into the **```/vagrant```** directory, which is shared with your virtual machine.
 
 
-To load the data, **```cd```** into the vagrant directory and use the command **```psql -d news -f newsdata.sql```**.
+To load the data, **```cd```** into the **```/vagrant```** directory and use the command **```psql -d news -f newsdata.sql```**.
 Here's what this command does:
 
 **```psql```** — the PostgreSQL command line program
