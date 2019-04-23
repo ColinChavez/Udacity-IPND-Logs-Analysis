@@ -41,17 +41,17 @@ Your code should be written with good Python style. The PEP8 style guide is an e
 1. **Install VirtualBox**. 
 VirtualBox is the software that actually runs the virtual machine. You can download it from [virtualbox.org](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1). Install the platform package for your operating system. You do not need the extension pack or the SDK. You do not need to launch VirtualBox after installing it; Vagrant will do that.
 
-Ubuntu users: If you are running Ubuntu 14.04, install VirtualBox using the Ubuntu Software Center instead. Due to a reported bug, installing VirtualBox from the site may uninstall other software you need.
+**Ubuntu users:** If you are running Ubuntu 14.04, install VirtualBox using the Ubuntu Software Center instead. Due to a reported bug, installing VirtualBox from the site may uninstall other software you need.
 
 2. **Install Vagrant**. 
 Vagrant is the software that configures the VM and lets you share files between your host computer and the VM's filesystem. Download it from [vagrantup.com](https://www.vagrantup.com/downloads.html). Install the version for your operating system.
 
-Windows users: The Installer may ask you to grant network permissions to Vagrant or make a firewall exception. Be sure to allow this.
+**Windows users:** The Installer may ask you to grant network permissions to Vagrant or make a firewall exception. Be sure to allow this.
 
 3. **Download the VM Configuration**
 Download the zip file: [FSND-Virtual-Machine.zip](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip) This will give you a directory called FSND-Virtual-Machine. It may be located inside your Downloads folder.
 
-Note: If you are using Windows OS you will find a Time Out error, to fix it use the new Vagrant file configuration to replace you current Vagrant file.
+**Note:** If you are using Windows OS you will find a Time Out error, to fix it use the new Vagrant file configuration to replace you current Vagrant file.
 
 Alternately, you can use Github to fork and clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
 
@@ -65,9 +65,6 @@ Inside the VM, change directory to **```/vagrant```** and look around with **```
 The files you see here are the same as the ones in the vagrant subdirectory on your computer (where you started Vagrant from). Any file you create in one will be automatically shared to the other. This means that you can edit code in your favorite text editor, and run it inside the VM.
 
 Files in the VM's **```/vagrant directory```** are shared with the vagrant folder on your computer. But other data inside the VM is not. For instance, the PostgreSQL database itself lives only inside the VM.
-
-
-
 
 # Run the Program
 Download the [required files](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip). You will need to unzip this file after downloading it. The file inside is called **```newsdata.sql```**. Put this file into the **```/vagrant```** directory, which is shared with your virtual machine.
@@ -139,3 +136,6 @@ https://www.postgresql.org/docs/8.1/functions-subquery.html
 https://www.postgresql.org/docs/9.1/functions-datetime.html
 https://www.postgresql.org/docs/9.5/functions-formatting.html
 https://www.postgresql.org/docs/9.5/sql-createcast.html
+https://www.youtube.com/watch?v=HXV3zeQKqGY
+https://docs.python.org/3/reference/lexical_analysis.html#string-literal-concatenation
+https://stackoverflow.com/questions/32750833/how-to-format-long-sql-queries-according-to-pep8
